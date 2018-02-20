@@ -1,7 +1,7 @@
 # BotBuilder
 A basic tutorial on how to create a simple bot for yourself in discord.js, including sample code for adding commands, making embeds and more.
 
-You can download and try out the bot for yourself by navigating to "Clone or Download" and selecting download ZIP. Follow the notes in the lines that begin with // to understand what you're doing by adding each section of code. Try editing some fields for yourself to customize your bot's responses, this is just layed out as a standard response.
+You can download and customize the bot for yourself by navigating to "Clone or Download" and selecting download ZIP. With included notes, descriptions and sample code, BotBuilder provides an easy way to create your own Discord bot.
 
 ## Preparing your bot for first use ##
 Once you've downloaded the bot folder, extract it and rename it to whatever you plan on calling your bot. Next you'll need to install node.js if you haven't already. You can grab the latest version from here: https://nodejs.org/ then run through the setup. Now you need to install discord.js to your bot's directory. Open the Command Prompt by using the Win+R shortcut and type "cmd". Navigate to your bot's folder. Once inside, type npm install discord.js --save then wait for it to finish. Next type npm init and enter the name of your bot in the first line and press enter. You can press enter to skip the rest until you complete the setup.
