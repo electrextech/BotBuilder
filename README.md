@@ -31,3 +31,6 @@ The downside to creating your own bot is finding somewhere to host it. When that
 
 ## Support me! ##
 This isn't required, but I'd be very grateful if you joined my Discord server called The Language Lounge (https://discord.gg/k25236D), or followed me on Twitter (https://twitter.com/TheEighthCow) as I put many hours of work into this. If this helped you out, please share it to your friends or someone else that would enjoy writing their own bot. When I began working on Discord bots back in November 2017, I had trouble finding accurate tutorials on how to set up a bot myself. Most were quite out of date, but the ones that weren't didn't describe anything that was happening, just informed me to paste in this code, and offered no help for beginners. My experience inspired me to share my newfound knowledge about code. While this isn't a YouTube video like most will use instead, I hope my hours spent writing notes in the code and creating this readme file will let some eager chatter setup a bot themselves. Thanks for choosing BotBuilder!
+
+## Credits ##
+Thank you to @TechyManTM for his generous help with the embeds.
