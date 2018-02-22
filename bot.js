@@ -1,14 +1,13 @@
-  // As you will notice throughout the code, I use ` (backticks) as my quotations. I strongly recommend using backticks as you may run into further code issues if you use other quotations.
-const Discord = require(`discord.js`)
+  // As you will notice throughout the code, I use ` (backticks) as my quotations when inserting the text for command responses. I strongly recommend using backticks as you may run into further code issues if you use other quotations.
+const Discord = require("discord.js")
   // Here we put discord.js as that is the library we are basing our code on, so the bot knows to check the library for the resources that are required.
 const client = new Discord.Client();
-const config = require(`./config.json`);
+const config = require("./config.json");
   // This tells the bot to look for the config.json file, which holds the token for the bot. Make sure the second last line of this file contains }) and the last line is client.login(config.token) otherwise it will not start.
-client.on(`ready`, ()=> {
+client.on("message", async message => {
   // This tells the client to start up the bot.
-  console.log(`Starting up the bot.`)
+  console.log(`Bot is starting...`)
   // `console.log` prints message in the command prompt window which is running the bot, so this output message will show if the bot is starting without errors.
-  console.log(`-----------------------`)
   console.log(`${client.user.username} is ready! ID: ${client.user.id}.`)
   client.user.setActivity(`on the computer`, { type: `PLAYING` });
   // You can change the text in the first group of quotations to be whatever you want the bot`s status to say. In the second group of quotations, you can choose between WATCHING, STREAMING, LISTENING TO, or PLAYING. Playing is the default option and displays on normal user profiles.
@@ -16,6 +15,7 @@ client.on(`ready`, ()=> {
 })
 
   // Now let`s start our first command. In the quotations, you have to decide on a prefix, along with the name of the command to trigger a response. For this bot, I`ll be using % as my prefix, followed by the command name, but you can make yours whatever you like.
+client.on("message", async message => {
   if(message.content.startsWith(`%test`)) {
     // The bracket at the end of this line is crucial as it is the opening for this section of code, which is all the configuration info of our %test command.
     // Forgetting either this, or the closing bracket for each section is a common mistake. If you get an error when trying to start your bot, check if one of these are missing first. Consult the troubleshooting section in the README.md file if this does not solve your issue.
