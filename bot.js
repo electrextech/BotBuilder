@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const config = require("./config.json");
   // This tells the bot to look for the config.json file, which holds the token for the bot. Make sure the second last line of this file contains }) and the last line is client.login(config.token) otherwise it will not start.
-client.on("message", async message => {
+client.on("ready", () => {
   // This tells the client to start up the bot.
   console.log(`${client.user.username} is ready! ID: ${client.user.id}.`)
   // `console.log` prints message in the command prompt window which is running the bot, so this output message will show if the bot has started without errors.
@@ -19,7 +19,7 @@ client.on("message", async message => {
   // Remember you can change the text in the quotations to whatever prefix you would like your bot to have. I'll be sticking with + for mine.
   const args = message.content.slice(prefix.length).split(" ");
   const command = args.shift().toLowerCase();
-  // A const is similar to a var. I won't be going fully into detail on these here though, as this is not a JavaScript tutorial.
+  // const is a constant variable that will cannot be changed later on. var is a variable that can be modified.
   // These two consts will greatly help out further on, especially the one named args, as we cannot make our say command without it.
   if(message.content.startsWith(prefix + "test")) {
     // The bracket at the end of this line is crucial as it is the opening for this section of code, which is all the configuration info of our %test command.
@@ -28,7 +28,7 @@ client.on("message", async message => {
     // This variable will hold the configuration for our test command. I call mine command_(command name) to keep my code organized.
     .setColor("#f28d21")
     // You can change the value in the quotations to any HTML color code.
-    .setAuthor(`${client.user.tag}`)
+    .setAuthor(`${message.author.tag}`)
     // This makes the author line display the tag of the user who executed the command. I don't usually include this line in my bot. Feel free to remove it.
     // You can also add a description under the author line if you'd like by typing the following: .setDescription("description text here")
     .addField(":wave: Hi there!", "If you can see this message, the bot is online and the command executed correctly.")
@@ -60,22 +60,25 @@ client.on("message", async message => {
   // Now we can close this section and move on to the next.
   // Probably one of the most common commands in every bot is a help command. This just lists all commands to let users explore the bot. Let's create ours now.
   if(message.content.startsWith(prefix + "help")) {
-    var command_help = new Discord.RichEmbed
+    var command_help = new Discord.RichEmbed()
     .setColor("#efb120")
     .addField(":pencil: Commands List", "%ping - Displays the current latency time.\n%test = Checks to see if the bot is functioning properly.\n%info = Shows bot version and last restart time.\n%help = Displays this help messages.\n%changelog = Lists recent changes to the bot.")
     .setFooter("BotBuilder", client.user.avatarURL)
     .setTimestamp(new Date ())
     message.channel.send(command_help)
+  }
 // Here we'll build our changelog command. This lets users know what's new in your bot.
    if(message.content.startsWith(prefix + "changelog")) {
+     var command_changelog = new Discord.RichEmbed()
      .setColor("#efb120")
      .addField(":arrows_counterclockwise: Changelog", "- Add your changes here\n- Add more here\n- Keep adding if needed")
      .setFooter("BotBuilder", client.user.avatarURL)
      .setTimestamp(new Date ())
-     ,essage
+     message.channel.send(command_changelog)
+   }
 // The ping command is slightly different to the rest, as we have to create 2 variables and a const. This is so the client (our bot) can grab the API latency, as well as client latency.
   if(message.content.startsWith(prefix + "ping")) {
-    var command_ping1 = new Discord.RichEmbed
+    var command_ping1 = new Discord.RichEmbed()
     .setColor("#efb120")
     .addField(":clock330: Pinging...", "Awaiting response from the Discord API...")
     .setFooter("BotBuilder", client.user.avatarURL)
