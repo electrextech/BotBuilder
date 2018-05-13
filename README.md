@@ -24,13 +24,15 @@ If you got "SyntaxError: missing ) after argument list" you forgot to end a sect
 
 If you fixed the problem in your code, you'll need to restart the bot. Press CTRL+C in your command window to stop it and node bot.js to start it up again. If you got the same error, check through the code manually again or make sure you saved the file. Not saving the file is a common mistake made.
 
-If you got an error that isn't listed here, you can DM me at TheEighthCow#1584 on Discord with your error and your code. I'll get back to you as soon as possible.
+If you got an error that isn't listed here, you can DM me at TEC#0001 on Discord with your error and your code. I'll get back to you as soon as possible.
 
 ## Hosting your bot ##
 The downside to creating your own bot is finding somewhere to host it. When that command prompt window isn't open with the bot running, your bot will be offline. That means that if your computer is off, so is your bot. If you can't find anywhere to host your bot besides your own computer, unfortunately your bot won't be up 24/7. Before you give up hope though, you could look into a Raspberry Pi, a tiny $30 computer built for tinkerers and host it there, which I may actually purchase myself in the future.
 
 ## Support me! ##
-This isn't required, but I'd be very grateful if you joined my Discord server called The Language Lounge (https://discord.gg/k25236D), or followed me on Twitter (https://twitter.com/TheEighthCow) as I put many hours of work into this. If this helped you out, please share it to your friends or someone else that would enjoy writing their own bot. When I began working on Discord bots back in November 2017, I had trouble finding accurate tutorials on how to set up a bot myself. Most were quite out of date, but the ones that weren't didn't describe anything that was happening, just informed me to paste in this code, and offered no help for beginners. My experience inspired me to share my newfound knowledge about code. While this isn't a YouTube video like most will use instead, I hope my hours spent writing notes in the code and creating this readme file will let some eager chatter setup a bot themselves. Thanks for choosing BotBuilder!
+If this helped you out, please share it to your friends or someone else that would enjoy writing their own bot. When I began working on Discord bots back in November 2017, I had trouble finding accurate tutorials on how to set up a bot myself. Most were quite out of date, but the ones that weren't didn't describe anything that was happening, just informed me to paste in this code, and offered no help for beginners. My experience inspired me to share my newfound knowledge about code. While this isn't a YouTube video like most will use instead, I hope my hours spent writing notes in the code and creating this readme file will let some eager chatter setup a bot themselves. Thanks for choosing BotBuilder!
+
+If you need any more help, you can ask in the #coding-help channel in my Discord server, joinable here: https://discord.gg/qFNAMH9.
 
 ## Credits ##
 Thank you to @TechyManTM for his generous help with the embeds.
