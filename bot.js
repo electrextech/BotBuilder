@@ -14,6 +14,7 @@ client.on("ready", () => {
 
   // Before we get to making commands, let's start by adding some variables. These will shorten our work load later on.
 client.on("message", async message => {
+  // This event will run everytime a new message is sent to a channel.
   var prefix = "+"
   // This variable will act as a shortcut to the text in the quotations. Right now, it might not seem useful but you'll discover it is later on.
   // Remember you can change the text in the quotations to whatever prefix you would like your bot to have. I'll be sticking with + for mine.
